@@ -151,3 +151,8 @@ td, th /* Mettre une bordure sur les td ET les th */
 {
   width: 60px;
 }
+
+.character_effect
+{
+  width: 260px;
+}
