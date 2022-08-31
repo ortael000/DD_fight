@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CombatDD</title>
+        <link rel="stylesheet" href="../HTML-CSS/CombatDDstyle.css">
+    </head>
+
+
+
+    <body class = Mainpage >
+        <H1> Main page for combat simulation </H1>
+    
+       <div class="pageorga"> <!--Conteneur pour la partie nav et la party content-->
+
+        <div class = fakenav > </div>
+        
+        <nav> <!--Repertoir de navigation -->
+
+            <H2>Homepage</H2>
+            <ul>
+                <li> <a  class = repertoire href= CombatDD.html >Homepage </a> </li>
+            </ul>
+
+            <H2>Opponent_list</H2>
+                <ul>
+                    <li> <a  class = repertoire href= Gothir_list.html > Gothir </a> </li>
+                </ul> 
+            
+        </nav>
+
+        <div class = "pagecontent" id = "pagecontent" >    <!--Conteneur pour la partie principale de la page et boite pour le conteneur pageorga-->  
+            
+            <div class = "opponent_selection">
+                <br>
+                Select and add an opponent
+
+                <select id="opponent_input">
+                  <option value="gothir_soldier">gothir_soldier</option>
+                  <option value="gothir_archer">gothir_archer</option>
+                  <option value="gothir_sergeant">gothir_sergeant</option>
+                  <option value="gothir_knight">gothir_knight</option>
+                  <option value="gothir_royal_guard">gothir_royal_guard</option>
+                </select>  
+                
+                <input type="submit" value="Add" id = "add_opponent" /> <br> <br>
+
+                number of opponent: <span id = opponent_number > 0 </span> <br> <br>
+
+                <input type="submit" value="battle_order" id = "battle_order" />
+
+            </div> <br>
+
+            <div class = "character_selection">
+                Enter a player character, it's initiative roll and its HP
+                <input type="input" id = character_name_input value="Character name">
+                <input type="input" class = character_init_input id = character_init_input value = "initiative">
+                <input type="input" class = character_init_input id = character_hp_input value = "HP">
+                <input type="submit" value="Add" id = "add_character" />
+            </div> <br>
+
+            <input type="submit" value="generate_loot" id = "generate_loot" />
+
+            <div class = attack_text_barre id = attack_text_barre > . </div>
+
+            
+              
+            <div  id = "opponents_display" > <!--Conteneur pour y inserer les adversaires ajoutes par le code js-->
+
+
+
+            </div>
+            
+        </div> <!--fin de pagecontent -->      
+    </div> <!--fin de pageorga -->
+
+    <script type="text/javascript" src="../JS/Bestiary.js"> </script>    
+    <script type="text/javascript" src="../JS/CombatDD.js"> </script>    
+    </body>
+</html>
