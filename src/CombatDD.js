@@ -146,6 +146,7 @@ generate_loot_button.addEventListener("click",function(){
 
     let present_opponent_list_lenght = present_opponent_list.length;
     let loot_name_table =[];
+    let loot_quantity =0;
     let loot_quantity_table =[];
     let total_piece = 0;
     let total_copper = 0;
