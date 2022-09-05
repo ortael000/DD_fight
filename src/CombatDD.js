@@ -1,6 +1,6 @@
 
 
-import {opponent,gothir_soldier,gothir_archer,gothir_sergeant,gothir_knight,gothir_royal_guard,opponent_list,opponent_list_lenght,find_in_opponent_list,create_opponent} from './Bestiary.js'; 
+import {opponent,opponent_list,opponent_list_lenght,find_in_opponent_list,create_opponent} from './Bestiary.js'; 
 
 
 // Elelement HTML de la ligne "ajouter un adversaire"
